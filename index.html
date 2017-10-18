@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title id="title">HBD &#x1F382; MAWAR</title>
+		<meta name="description" content="Pogody is a responsive HTML5 coming soon template by hencework." />
+		<meta name="keywords" content="Pogody, Responsive Coming Soon Template, Under Construction Template, Responsive Template, HTML5 Template, themeforest.net, Bootstrap, HTML5, Creative, Landing Page, Sass, Clean, Design, Modern, Angular js, MailChimp Subscription," />
+		<meta name="author" content="hencework" />
+		
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		
+		<!--Fonts - changed to Source Code Pro-->
+		<link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
+		
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script language="JavaScript">
+document.oncontextmenu = function() {
+    return false;
+}
+</script>
+
+<script language="JavaScript">
+
+//////////BLOCK F12////////////////////////
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+/////////////////////F!N///////////////////////
+
+
+//BLOCK KLIK KANAN
+var message="Maap, klik kanan tidak berfungsi :)"; 
+/////////////////////////////////// 
+function clickIE() {if (document.all) {(message);return false;}} 
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) { 
+if (e.which==2||e.which==3) {(message);return false;}}} 
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+document.oncontextmenu=new Function("return false") 
+// 
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w', 'u', 'i', 's');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+alert('Shortcut CTRL + '+String.fromCharCode(key) +' tidak berfungsi :)');
+return false;
+}
+}
+}
+return true;
+}
+</script>
+	</head>
+	
+	<body data-ng-app="contactApp" onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="la-anim-1"></div>
+		</div>
+		<!--/Preloader-->
+		
+		<!--Container-->
+		<div class="pad-zero">
+			
+			<!--Splitlayout -->
+			<div id="splitlayout" class="splitlayout reset-layout">
+				
+				<!--Intro-->
+				<div class="intro">
+					
+					<!--Left Content Intro-->
+					<div class="side side-left">
+						<!--/About Nav-->
+						
+						<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center content-wrap">
+						
+						<!--Logo-->
+						<div class="logo align-center text-left"><img src="img/logoo.png" alt="cake">
+						</div>
+						<!--/Logo-->
+						
+						<!--main content-->
+						<div class="main">
+							
+							<!--Content with Typing Intro-->
+							<section id="home" class="section active">
+								<div  class="preloader"></div>
+								<div class="align-center text-left">
+									<!-- <span class="small-hr animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="200"></span> -->
+									<p class="animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="300">29th Anniversary</p>
+									<div class="type-wrap text-left">
+										<h1  class="animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="900"><span id="typed" ></span></h1>
+									</div>
+								</div>		
+							</section>													
+							<div class="copyright">
+								<p>Build with &#x1F49B; from Chocky Andri Sihombing</p>
+							</div>
+						</div>
+						<!--/main content-->
+						
+						</div>
+					</div>
+					<!--/Left Content Intro-->
+					
+					<!--Right Content Intro-->
+					<div class="side side-right">
+						<div class="bg"></div>
+						<div class="bg disappear"></div>
+						<!--slider image-->
+						<ul class="cb-slideshow">
+							<li><span>Image 01</span></li>
+							<li><span>Image 02</span></li>
+							<li><span>Image 03</span></li>
+							<li><span>Image 04</span></li>
+							<li><span>Image 05</span></li>
+							<li><span>Image 06</span></li>
+							<li><span>Image 07</span></li>
+							<li><span>Image 08</span></li>
+							<li><span>Image 09</span></li>
+						</ul>
+						<!--/slider image-->						
+						<div class="counter-content">
+							<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center text-left">						
+								<!--Counter
+								<div id="countdown">
+								  <span class="days">00</span>
+								</div>
+								<span class="small-hr"></span>
+								<span class="remain-days">More Days</span>
+								<!--/Counter-->
+								
+							</div>	
+						</div>
+					<div class="trans-overlay-dark"></div>	
+					</div>
+					<!--/Right Content Intro-->
+				</div>
+				<!--/Intro-->				
+			</div>
+			<!-- /Splitlayout -->
+		
+		</div>
+		<!-- /Container -->
+		
+		<!-- Scripts -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpSplitLayout.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/input-text.js"></script>
+		<script src="js/notifyMe.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script src="js/init.js"></script>
+	</body>
+</html>
